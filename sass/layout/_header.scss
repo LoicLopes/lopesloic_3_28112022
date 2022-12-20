@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+    &__image {
+        width: 200px;
+        padding: 20px;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+    .header {
+        &__image {
+            width: 400px;
+        }
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
+    .header {
+        &__image {
+            width: 400px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 768px de large et au plus 991px de large */
+@media all and (min-width:768px) and (max-width:991px) {
+    .procces__and__card__flex {
+        background-color: #f7f7f7;
+        padding-bottom: 110px;
+    }
+}
+
+/* Nouvelles règles si la fenêtre fait au minimum 992px de large*/
+@media all and (min-width:992px) {
+    .container_page {
+        max-width: 1400px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .procces__and__card__flex {
+        display: flex;
+        gap: 20px;
+        background-color: #f7f7f7;
+        padding-bottom: 110px;
+    }
+}

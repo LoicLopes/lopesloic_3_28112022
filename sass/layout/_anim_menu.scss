@@ -1,0 +1,69 @@
+.menu {
+  &:nth-child(3) {
+    animation: menu_timing 1s;
+    animation-fill-mode: both;
+    animation-delay: 150ms;
+  }
+
+  &:nth-child(4) {
+    animation: menu_timing 1s;
+    animation-fill-mode: both;
+    animation-delay: 300ms;
+  }
+
+  &:nth-child(5) {
+    animation: menu_timing 1s;
+    animation-fill-mode: both;
+    animation-delay: 450ms;
+  }
+
+  &:nth-child(6) {
+    animation: menu_timing 1s;
+    animation-fill-mode: both;
+    animation-delay: 600ms;
+  }
+
+  &__selection {
+    color: white;
+    background: $tertiary-color;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    opacity: 0;
+    transition: transform .5s ease-in-out, width .5s ease-in-out, opacity .5s ease-in-out;
+
+    span {
+      transition: .4s ease-in-out;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &:hover .menu__selection {
+    width: 120px;
+    opacity: 100%;
+
+ 
+    span {
+      transform: rotate(360deg);
+
+    }
+  }
+}
+
+@keyframes menu_timing {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
